@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim | Gürkan Bülbül</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <nav>
+        <a href="/">Ana Sayfa</a>
+        <a href="/projects">Projeler</a>
+        <a href="/contact">İletişim</a>
+    </nav>
+
+    <h1>İletişim</h1>
+
+    <form method="POST">
+        <input type="text" name="name" placeholder="Adınız" required><br><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        <textarea name="message" placeholder="Mesajınız" required></textarea><br><br>
+        <button type="submit">Gönder</button>
+    </form>
+
+</div>
+
+</body>
+</html>
