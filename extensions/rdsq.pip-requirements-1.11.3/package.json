@@ -1,0 +1,123 @@
+{
+	"name": "pip-requirements",
+	"displayName": "Pip Requirements",
+	"description": "Tools to simplify your interaction with pip's requirements.txt",
+	"author": {
+		"name": "rdsq"
+	},
+	"publisher": "rdsq",
+	"version": "1.11.3",
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rdsq/pip-requirements"
+	},
+	"engines": {
+		"vscode": "^1.86.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "pip-requirements.install",
+				"title": "Install Pip Packages",
+				"icon": "$(cloud-download)"
+			},
+			{
+				"command": "pip-requirements.freeze",
+				"title": "Freeze Pip Packages",
+				"icon": "$(export)"
+			},
+			{
+				"command": "pip-requirements.install-row",
+				"title": "Install Pip Package"
+			},
+			{
+				"command": "pip-requirements.browse-row",
+				"title": "View Pip Package In The Browser"
+			},
+			{
+				"command": "pip-requirements.create-requirements",
+				"title": "Pip Requirements: Create Requirements File"
+			}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"command": "pip-requirements.install",
+					"group": "navigation",
+					"when": "editorLangId == 'pip-requirements' && !isWeb"
+				},
+				{
+					"command": "pip-requirements.freeze",
+					"group": "navigation",
+					"when": "editorLangId == 'pip-requirements' && !isWeb && !editorReadonly"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "pip-requirements.install-row",
+					"when": "resourceLangId == 'pip-requirements' && !isWeb",
+					"group": "Package"
+				},
+				{
+					"command": "pip-requirements.browse-row",
+					"when": "resourceLangId == 'pip-requirements'",
+					"group": "Package"
+				}
+			],
+			"explorer/context": [
+				{
+					"command": "pip-requirements.install",
+					"when": "resourceLangId == 'pip-requirements' && !isWeb",
+					"group": "Pip"
+				},
+				{
+					"command": "pip-requirements.freeze",
+					"when": "resourceLangId == 'pip-requirements' && !isWeb",
+					"group": "Pip"
+				}
+			]
+		},
+		"configuration": {
+			"title": "Pip Requirements",
+			"properties": {
+				"pip-requirements.ignoreFocusOut": {
+					"type": "boolean",
+					"default": false,
+					"description": "Do not close the path input fields when the focus moves out of them"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "vscode-test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^10.0.8",
+		"@types/node": "22.7.4",
+		"@types/vscode": "^1.86.0",
+		"@typescript-eslint/eslint-plugin": "^8.8.0",
+		"@typescript-eslint/parser": "^8.8.0",
+		"@vscode/test-cli": "^0.0.10",
+		"@vscode/test-electron": "^2.4.1",
+		"assert": "^2.1.0",
+		"eslint": "^9.11.1",
+		"typescript": "^5.6.2"
+	},
+	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+	"__metadata": {
+		"installedTimestamp": 1764699721600,
+		"targetPlatform": "undefined",
+		"size": 42817
+	}
+}

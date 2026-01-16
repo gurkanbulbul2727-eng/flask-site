@@ -1,0 +1,91 @@
+{
+	"name": "katalium",
+	"displayName": "Katalium - Selenium and TestNG made easy",
+	"publisher": "katalon-llc",
+	"description": "A test automation framework based on TestNG and Selenium that provides a blueprint for test automation projects.",
+	"version": "1.0.7",
+	"engines": {
+		"vscode": "^1.34.0"
+	},
+	"categories": [
+		"Other",
+		"Programming Languages",
+		"Snippets"
+	],
+	"keywords": [
+		"katalon",
+		"Katalon Studio",
+		"test",
+		"selenium",
+		"testing",
+		"automation",
+		"TestNG",
+		"Katalium"
+	],
+	"repository": {
+		"url": "https://github.com/katalon-studio/katalium-vscode-extension"
+	},
+	"homepage": "https://github.com/katalon-studio/katalium-vscode-extension",
+	"preview": false,
+	"public": true,
+	"icon": "media/katalium-logo.png",
+	"activationEvents": [
+		"onView:kataMenu",
+		"onCommand:kata.signup"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "kata-explorer",
+					"title": "Katalium",
+					"icon": "media/katalium-icon.png"
+				}
+			]
+		},
+		"views": {
+			"kata-explorer": [
+				{
+					"id": "kataMenu",
+					"name": ""
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "tslint -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/mkdirp": "^0.5.2",
+		"@types/node": "^12.0.7",
+		"@types/rimraf": "^2.0.2",
+		"@types/vscode": "^1.32.0",
+		"tslint": "^5.16.0",
+		"typescript": "^3.9.10",
+		"webpack": "^4.34.0",
+		"webpack-cli": "^3.3.4"
+	},
+	"dependencies": {
+		"adm-zip": "^0.4.13",
+		"cross-port-killer": "^1.1.1",
+		"download": "^7.1.0",
+		"fs-extra": "^8.1.0",
+		"homedir": "^0.6.0",
+		"kill-port": "^1.5.1",
+		"portscanner": "^2.2.0",
+		"request": "^2.88.0",
+		"request-promise": "^4.2.4"
+	},
+	"extensionPack": [
+		"vscjava.vscode-java-pack"
+	],
+	"__metadata": {
+		"installedTimestamp": 1764699620863,
+		"targetPlatform": "undefined",
+		"size": 8876743
+	}
+}

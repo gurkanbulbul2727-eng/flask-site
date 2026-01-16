@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(120deg, #1f2933, #111827);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 40px;
+    color: #e5e7eb;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #1f2933;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+h1 {
+    color: #60a5fa;
+    text-align: center;
+}
+
+h2 {
+    color: #93c5fd;
+    margin-top: 30px;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: "⚡ ";
+    padding-left: 20px;
+}
+
+.email {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #111827;
+    border-radius: 8px;
+    text-align: center;
+}
