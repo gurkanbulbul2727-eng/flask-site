@@ -181,3 +181,17 @@ body.light {
     color: #38bdf8;
     text-decoration: none;
 }
+/* Sayfa arkaplanlarini duzelt */
+body.light .profile-card {
+    background: white;
+    color: black;
+}
+
+body.light .contact-card {
+    background: white;
+    color: black;
+}
+
+body.light .bar {
+    background: #e5e7eb;
+}
