@@ -195,3 +195,31 @@ body.light .contact-card {
 body.light .bar {
     background: #e5e7eb;
 }
+/* === TEMA UYUM DÜZELTMESİ === */
+body.light .profile-card {
+    background: white !important;
+    color: black !important;
+}
+
+body.light .contact-card {
+    background: white !important;
+    color: black !important;
+}
+
+body.light .bar {
+    background: #e5e7eb !important;
+}
+/* === TEMA UYUM DÜZELTMESİ === */
+body.light .profile-card {
+    background: white !important;
+    color: black !important;
+}
+
+body.light .contact-card {
+    background: white !important;
+    color: black !important;
+}
+
+body.light .bar {
+    background: #e5e7eb !important;
+}
