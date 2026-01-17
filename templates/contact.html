@@ -2,28 +2,33 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>İletişim | Gürkan Bülbül</title>
+    <title>İletişim</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-<div class="container">
+<div class="contact-container">
+    <h2>İletişim</h2>
 
-    <nav>
-        <a href="/">Ana Sayfa</a>
-        <a href="/projects">Projeler</a>
-        <a href="/contact">İletişim</a>
-    </nav>
+    <div class="contact-card">
+        <p>📧 Email</p>
+        <a href="mailto:seninmail@gmail.com">seninmail@gmail.com</a>
 
-    <h1>İletişim</h1>
+        <p>💻 GitHub</p>
+        <a href="https://github.com/gurkanbulbul2727-eng" target="_blank">
+            github.com/gurkanbulbul2727-eng
+        </a>
 
-    <form method="POST">
-        <input type="text" name="name" placeholder="Adınız" required><br><br>
-        <input type="email" name="email" placeholder="Email" required><br><br>
-        <textarea name="message" placeholder="Mesajınız" required></textarea><br><br>
-        <button type="submit">Gönder</button>
-    </form>
+        <p>📷 Instagram</p>
+        <a href="https://instagram.com/kullaniciadi" target="_blank">
+            instagram.com/kullaniciadi
+        </a>
 
+        <p>💬 Discord</p>
+        <span>gurkan#1234</span>
+    </div>
+
+    <a class="back-btn" href="/">Ana Sayfa</a>
 </div>
 
 </body>

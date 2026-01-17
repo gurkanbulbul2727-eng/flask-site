@@ -57,3 +57,41 @@ nav a {
 nav a:hover {
     color: white;
 }
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0f172a;
+    color: white;
+    flex-direction: column;
+}
+
+.contact-card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.contact-card p {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-card a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    color: #0ea5e9;
+}
+
+.back-btn {
+    margin-top: 20px;
+    color: #38bdf8;
+    text-decoration: none;
+}
