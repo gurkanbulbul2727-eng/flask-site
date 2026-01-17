@@ -5,14 +5,27 @@
     <title>Gürkan | Portföy</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+<body class="dark">
+
+<button class="mode-toggle" onclick="toggleMode()">🌙 / ☀️</button>
 
 <div class="hero">
     <div class="profile-card">
-        <img src="{{ url_for('static', filename='profile.png') }}" alt="Profil Foto" class="profile-img">
+        <img src="{{ url_for('static', filename='profile.png') }}" class="profile-img">
 
         <h1>Gürkan Bülbül</h1>
         <p>Python & Web Developer</p>
+
+        <div class="skills">
+            <p>Python</p>
+            <div class="bar"><div class="fill python"></div></div>
+
+            <p>HTML</p>
+            <div class="bar"><div class="fill html"></div></div>
+
+            <p>CSS</p>
+            <div class="bar"><div class="fill css"></div></div>
+        </div>
 
         <div class="btn-group">
             <a href="/projects" class="btn">Projeler</a>
@@ -20,6 +33,12 @@
         </div>
     </div>
 </div>
+
+<script>
+function toggleMode() {
+    document.body.classList.toggle("light");
+}
+</script>
 
 </body>
 </html>
