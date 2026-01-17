@@ -2,44 +2,23 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Gürkan Bülbül | Portföy</title>
+    <title>Gürkan | Portföy</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-<div class="container">
+<div class="hero">
+    <div class="profile-card">
+        <img src="{{ url_for('static', filename='profile.png') }}" alt="Profil Foto" class="profile-img">
 
-    <!-- Menü -->
-    <nav>
-        <a href="/">Ana Sayfa</a>
-        <a href="/projects">Projeler</a>
-        <a href="/contact">İletişim</a>
-    </nav>
+        <h1>Gürkan Bülbül</h1>
+        <p>Python & Web Developer</p>
 
-    <h1>Gürkan Bülbül</h1>
-    <p>9. sınıf öğrencisi | Yazılım öğreniyorum</p>
-
-    <h2>Hakkımda</h2>
-    <p>
-        Python ve web geliştirme alanında kendimi geliştiriyorum.
-        Flask kullanarak kişisel projeler yapıyor ve öğrendiklerimi
-        gerçek sitelere dönüştürüyorum.
-    </p>
-
-    <h2>Becerilerim</h2>
-    <ul>
-        <li>Python (Başlangıç - Orta)</li>
-        <li>Flask</li>
-        <li>HTML & CSS</li>
-        <li>Git & GitHub</li>
-        <li>Problem Çözme</li>
-    </ul>
-
-    <h2>İletişim</h2>
-    <div class="email">
-        <p>Email: gurkanbulbul2727@gmail.com</p>
+        <div class="btn-group">
+            <a href="/projects" class="btn">Projeler</a>
+            <a href="/contact" class="btn outline">İletişim</a>
+        </div>
     </div>
-
 </div>
 
 </body>

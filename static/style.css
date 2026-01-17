@@ -95,3 +95,66 @@ nav a:hover {
     color: #38bdf8;
     text-decoration: none;
 }
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #020617, #0f172a);
+}
+
+.profile-card {
+    background: #020617;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 0 30px rgba(56,189,248,0.4);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    margin-bottom: 15px;
+}
+
+.btn-group {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    background: #38bdf8;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+.btn.outline {
+    background: transparent;
+    color: #38bdf8;
+    border: 2px solid #38bdf8;
+}
+
+.btn.outline:hover {
+    background: #38bdf8;
+    color: black;
+}
